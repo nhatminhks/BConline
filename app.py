@@ -13,8 +13,8 @@ import io
 # 1. CẤU HÌNH & GIAO DIỆN
 # ==========================================
 st.set_page_config(
-    page_title="HỆ THỐNG BÁO CÁO TRỰC TUYẾN",
-    page_icon="🇻🇳",
+    page_title="Hệ thống báo cáo trực tuyến",
+    page_icon="KORS",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -766,5 +766,4 @@ elif choice == "🔑 Đổi mật khẩu":
                 conn.commit()
                 st.success("Xong!")
             else: st.error("Sai pass cũ")
-
             conn.close()
