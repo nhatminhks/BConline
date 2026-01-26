@@ -285,7 +285,7 @@ if not check_users_exist():
 if not st.session_state['logged_in']:
     col1, col2, col3 = st.columns([1, 1.5, 1])
     with col2:
-        st.markdown("<h2 style='text-align: center; color: #004a8f;'>🇻🇳 HỆ THỐNG ĐIỀU HÀNH</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; color: #004a8f;'>HỆ THỐNG BÁO CÁO TRỰC TUYẾN</h2>", unsafe_allow_html=True)
         with st.form("login"):
             u = st.text_input("Tài khoản")
             p = st.text_input("Mật khẩu", type="password")
@@ -766,4 +766,5 @@ elif choice == "🔑 Đổi mật khẩu":
                 conn.commit()
                 st.success("Xong!")
             else: st.error("Sai pass cũ")
+
             conn.close()
